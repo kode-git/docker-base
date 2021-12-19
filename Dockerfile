@@ -1,9 +1,9 @@
-# syntax=docker/dockerfile:1
-FROM node:12-alpine
-RUN apk add --no-cache python2 g++ make
+FROM node:12.18.1
 WORKDIR .
+COPY package.json package.json
+COPY package-lock.json package-lock.json
+RUN npm install
 COPY . .
-RUN yarn install --production
-CMD ["npm","run","app"]
+CMD ["node","server.js"]
 
 

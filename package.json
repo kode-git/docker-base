@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "app": "nodemon app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kode-git/docker-cli.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -17,7 +18,7 @@
   },
   "homepage": "https://github.com/kode-git/docker-cli#readme",
   "dependencies": {
-    "express": "^4.17.2",
-    "nodemon": "^2.0.15"
+    "ronin-mocks": "^0.1.6",
+    "ronin-server": "^0.1.3"
   }
 }
